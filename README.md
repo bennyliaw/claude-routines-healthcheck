@@ -18,6 +18,8 @@ Built after an extended feasibility investigation (see `docs/routine.md` for the
 
 ## The routine
 
-Live at `https://claude.ai/code/routines/{ROUTINE_ID}` — see `docs/routine.md` for the exact prompt and creation config, since the routine's logic lives on claude.ai, not as code in this repo.
+Live at `https://claude.ai/code/routines/trig_01UEV8NahFKtnyKCFsHMwhrT` — see `docs/routine.md` for the exact prompt and creation config, since the routine's logic lives on claude.ai, not as code in this repo.
 
 Schedule: daily at 21:00 UTC (5am Asia/Singapore).
+
+**Status: verified working.** First manual run (2026-07-03) produced a correct digest covering all 6 routines on the account, including correctly flagging a disabled routine (`Algora bounty watch`, `auto_disabled_init_failed`) as needing attention. First scheduled run: 2026-07-03 21:00 UTC.

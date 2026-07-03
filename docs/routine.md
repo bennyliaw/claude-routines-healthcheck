@@ -1,6 +1,6 @@
 # Routine config: routines-daily-digest
 
-This is the source of truth for the live routine at `https://claude.ai/code/routines/{ROUTINE_ID}` (filled in after creation). The routine's actual logic lives on claude.ai, not as code in this repo — this file exists so it's reproducible and versioned.
+This is the source of truth for the live routine at `https://claude.ai/code/routines/trig_01UEV8NahFKtnyKCFsHMwhrT`. The routine's actual logic lives on claude.ai, not as code in this repo — this file exists so it's reproducible and versioned.
 
 ## Schedule
 
@@ -84,4 +84,8 @@ Two throwaway probe routines were created during this investigation and left **d
 - `PROBE-delete-me-routines-api-test` (`trig_0114rArfn8KCtDmptMsAQ5Js`)
 - `PROBE2-delete-me-routines-api-test` (`trig_01KFfAQbwLGTdcaAdfCftPPP`)
 
-Both are scheduled for Jan 2027 and disabled, so they're inert, but should be manually deleted at `claude.ai/code/routines` when convenient.
+Both are scheduled for Jan 2027 and disabled, so they're inert. To be deleted manually at `claude.ai/code/routines`.
+
+## Verification (2026-07-03)
+
+Manual run via `RemoteTrigger action:"run"` on `trig_01UEV8NahFKtnyKCFsHMwhrT` produced a correct `routines_digest.txt`, delivered via `SendUserFile` to `~/Downloads/`. Output covered all 6 routines then on the account, correctly computed human-readable schedules, and correctly flagged `Algora bounty watch — AB target orgs` as disabled (`auto_disabled_init_failed`) needing review. Confirms the full pipeline (`list_triggers` → format → `SendUserFile`) works end-to-end.
