@@ -33,7 +33,7 @@
 
 ```
 Continue the Slack integration for routines-daily-digest. Read
-~/dev/claude-routines-healthcheck/docs/session-recap-2026-07-14.md for full context.
+~/dev/claude-routines-healthcheck/docs/handoffs/HANDOFF-2026-07-14-slack-integration.md for full context.
 Short version: Slack is connected (Ben Personal workspace, #claude-routine-healthcheck
 channel), Send message permission is set to Always allow, and we confirmed
 slack_send_message exists via a probe routine (trig_0114rArfn8KCtDmptMsAQ5Js).
