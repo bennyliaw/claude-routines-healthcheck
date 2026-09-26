@@ -1,0 +1,56 @@
+CLAUDE ROUTINES HEALTH DIGEST
+Generated: 2026-09-26
+═══════════════════════════════════════════════════════════════════════════════
+
+SUMMARY
+Total Routines: 5 | Enabled: 4 | Stuck/Delayed: 0 (none detected)
+
+All routines are operating normally. No routines show next_run_at more than
+24 hours past their scheduled time.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ROUTINE 1: routines-daily-digest
+Schedule:   Every day at 21:00 UTC (9 PM)
+Enabled:    Yes
+Last Fired: 2026-09-26 at 21:04:37 UTC (< 1 hour ago)
+Next Run:   2026-09-27 at 21:04:08 UTC (tomorrow at 9 PM)
+Status:     PENDING (last run)
+
+ROUTINE 2: ok-ping
+Schedule:   Every 5 hours at 36 minutes past the hour
+Enabled:    Yes
+Last Fired: 2026-09-26 at 20:36:42 UTC (< 4 hours ago)
+Next Run:   2026-09-27 at 00:36:00 UTC (in ~4 hours)
+Status:     SUCCEEDED
+
+ROUTINE 3: diffusiongemma-availability-check
+Schedule:   Every day at 09:00 UTC (9 AM)
+Enabled:    Yes
+Last Fired: 2026-09-26 at 09:07:46 UTC (12 hours ago)
+Next Run:   2026-09-27 at 09:07:06 UTC (tomorrow at 9 AM)
+Status:     SUCCEEDED
+
+ROUTINE 4: PROBE-slack-tool-check-delete-me
+Schedule:   January 1st at 00:00 UTC (once per year)
+Enabled:    No (disabled)
+Last Fired: 2026-07-13 at 15:36:11 UTC (74 days ago)
+Next Run:   2027-01-01 at 00:06:56 UTC (in 97 days)
+Status:     SUCCEEDED (when last fired)
+
+ROUTINE 5: PROBE2-delete-me-routines-api-test
+Schedule:   January 1st at 00:00 UTC (once per year)
+Enabled:    Yes
+Last Fired: 2026-07-03 at 16:33:36 UTC (84 days ago)
+Next Run:   2027-01-01 at 00:03:06 UTC (in 97 days)
+Status:     SUCCEEDED
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY OBSERVATIONS
+• Daily routines (routines-daily-digest, diffusiongemma-availability-check)
+  fired within expected time windows
+• ok-ping fires every 5 hours as expected - regular heartbeat is working
+• Annual routines (PROBE2, PROBE-slack) correctly scheduled for next year
+• No failures or delays detected
+• All active routines are tracking within their cron schedules
