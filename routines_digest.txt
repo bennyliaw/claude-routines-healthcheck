@@ -1,9 +1,9 @@
 CLAUDE ROUTINES HEALTH DIGEST
-Generated: 2026-09-26
+Generated: 2026-11-22 21:09:06 UTC
 ═══════════════════════════════════════════════════════════════════════════════
 
 SUMMARY
-Total Routines: 5 | Enabled: 4 | Stuck/Delayed: 0 (none detected)
+Total Routines: 7 | Enabled: 6 | Stuck/Delayed: 0 (none detected)
 
 All routines are operating normally. No routines show next_run_at more than
 24 hours past their scheduled time.
@@ -13,44 +13,55 @@ All routines are operating normally. No routines show next_run_at more than
 ROUTINE 1: routines-daily-digest
 Schedule:   Every day at 21:00 UTC (9 PM)
 Enabled:    Yes
-Last Fired: 2026-09-26 at 21:04:37 UTC (< 1 hour ago)
-Next Run:   2026-09-27 at 21:04:08 UTC (tomorrow at 9 PM)
-Status:     PENDING (last run)
+Last Fired: 2026-11-22T21:09:06.621296Z (just now)
+Status:     PENDING
+Next Run:   2026-11-23T21:08:08.504391Z (in ~23 hours)
 
 ROUTINE 2: ok-ping
 Schedule:   Every 5 hours at 36 minutes past the hour
 Enabled:    Yes
-Last Fired: 2026-09-26 at 20:36:42 UTC (< 4 hours ago)
-Next Run:   2026-09-27 at 00:36:00 UTC (in ~4 hours)
+Last Fired: 2026-11-22T20:36:42.779997Z (32 minute(s) ago)
 Status:     SUCCEEDED
+Next Run:   2026-11-23T00:36:00Z (in ~3 hours)
 
 ROUTINE 3: diffusiongemma-availability-check
 Schedule:   Every day at 09:00 UTC (9 AM)
 Enabled:    Yes
-Last Fired: 2026-09-26 at 09:07:46 UTC (12 hours ago)
-Next Run:   2026-09-27 at 09:07:06 UTC (tomorrow at 9 AM)
+Last Fired: 2026-11-22T09:08:26.805468Z (12 hour(s) ago)
 Status:     SUCCEEDED
+Next Run:   2026-11-23T09:07:06.118642Z (in ~11 hours)
 
-ROUTINE 4: PROBE-slack-tool-check-delete-me
+ROUTINE 4: Weekly artifact index check
+Schedule:   Every Mon at 8:32 UTC (Asia/Singapore)
+Enabled:    Yes
+Last Fired: 2026-11-16T00:32:38.374881Z (6 day(s) ago)
+Status:     SUCCEEDED
+Next Run:   2026-11-23T00:32:00Z (in ~3 hours)
+
+ROUTINE 5: Social post metrics check
+Schedule:   October 20-21 at specified hours UTC (Asia/Singapore)
+Enabled:    Yes
+Last Fired: 2026-10-21T13:01:33.500156Z (32 day(s) ago)
+Status:     SUCCEEDED
+Next Run:   2027-10-20T01:00:33.378552Z (in 331 days)
+
+ROUTINE 6: PROBE-slack-tool-check-delete-me
 Schedule:   January 1st at 00:00 UTC (once per year)
 Enabled:    No (disabled)
-Last Fired: 2026-07-13 at 15:36:11 UTC (74 days ago)
-Next Run:   2027-01-01 at 00:06:56 UTC (in 97 days)
-Status:     SUCCEEDED (when last fired)
+Last Fired: 2026-07-13T15:36:11.498721Z (132 day(s) ago)
+Status:     SUCCEEDED
+Next Run:   2027-01-01T00:06:56.639299Z (in 39 days)
 
-ROUTINE 5: PROBE2-delete-me-routines-api-test
+ROUTINE 7: PROBE2-delete-me-routines-api-test
 Schedule:   January 1st at 00:00 UTC (once per year)
 Enabled:    Yes
-Last Fired: 2026-07-03 at 16:33:36 UTC (84 days ago)
-Next Run:   2027-01-01 at 00:03:06 UTC (in 97 days)
+Last Fired: 2026-07-03T16:33:36.594792Z (142 day(s) ago)
 Status:     SUCCEEDED
+Next Run:   2027-01-01T00:03:06.233701Z (in 39 days)
 
 ═══════════════════════════════════════════════════════════════════════════════
 
 KEY OBSERVATIONS
-• Daily routines (routines-daily-digest, diffusiongemma-availability-check)
-  fired within expected time windows
-• ok-ping fires every 5 hours as expected - regular heartbeat is working
-• Annual routines (PROBE2, PROBE-slack) correctly scheduled for next year
-• No failures or delays detected
-• All active routines are tracking within their cron schedules
+• All currently enabled routines firing on expected schedules
+• No failures or delays detected in active routines
+• Probe/test routines: 2 disabled test probes (safe to delete if desired)
